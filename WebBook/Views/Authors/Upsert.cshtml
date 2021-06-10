@@ -1,0 +1,78 @@
+﻿@model WebBook.Models.Authors
+
+@{
+    var title = "Create Authors";
+}
+
+<form method="post" asp-action="Upsert" enctype="multipart/form-data">
+
+    <div class="row px-2 mx-2 backgroundWhite border">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        @if (Model.Id != 0)
+        {
+            <input type="hidden" asp-for="Id" />
+            title = "Edit Authors";
+        }
+        <div class="col-12 p-3">
+            <h2 class="text-primary">@title</h2>
+        </div>
+        <div class="col-8">
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="FirstName"></label>
+                </div>
+                <div class="col-8">
+                    <input asp-for="FirstName" class="form-control" />
+                    <span asp-validation-for="FirstName" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="LastName"></label>
+                </div>
+                <div class="col-8">
+                    <input asp-for="LastName" class="form-control" />
+                    <span asp-validation-for="LastName" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="Country.Id"></label>
+                </div>
+                <div class="col-8">
+                    <input asp-for="Country.Id" class="form-control" />
+                    <span asp-validation-for="Country.Id" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="Country.Name"></label>
+                </div>
+                <div class="col-8">
+                    <input asp-for="Country.Name" class="form-control" />
+                    <span asp-validation-for="Country.Name" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-4 offset-4">
+                    <button type="submit" class="btn btn-primary form-control">
+                        @(Model.Id!=0?"Update":"Create")
+                    </button>
+                </div>
+                <div class="col-4">
+                    <a asp-action="Index" class="btn btn-success form-control">Back to List</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 text-right" style="width: 250px;">
+            <img src="https://via.placeholder.com/150" width="100%" />
+        </div>
+    </div>
+
+</form>
+
+
+@section Scripts{
+    <script src="~/js/authors.js"></script>
+}

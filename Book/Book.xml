@@ -1,0 +1,306 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Book</name>
+    </assembly>
+    <members>
+        <member name="M:Book.Controllers.AuthorsController.GetAuthors">
+            <summary>
+            Get Authors
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Book.Controllers.AuthorsController.GetAuthor(System.Int32)">
+            <summary>
+            Get Author
+            </summary>
+            <param name="authorId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Book.Controllers.AuthorsController.GetBooksByAuthor(System.Int32)">
+            <summary>
+            Get Book for Author
+            </summary>
+            <param name="authorId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Book.Controllers.AuthorsController.GetAuthorsOfABook(System.Int32)">
+            <summary>
+            Get Author of book
+            </summary>
+            <param name="bookId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Book.Controllers.AuthorsController.CreateAuthor(Book.Models.Author)">
+            <summary>
+            Create Author
+            </summary>
+            <param name="authorToCreate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Book.Controllers.AuthorsController.UpdateAuthor(System.Int32,Book.Models.Author)">
+            <summary>
+            Update Author
+            </summary>
+            <param name="authorId"></param>
+            <param name="authorToUpdate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Book.Controllers.AuthorsController.DeleteAuthor(System.Int32)">
+            <summary>
+            Delete Author
+            </summary>
+            <param name="authorId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Book.Controllers.BooksController.GetBooks">
+            <summary>
+            Get Books
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Book.Controllers.BooksController.GetBook(System.Int32)">
+            <summary>
+            Get Book
+            </summary>
+            <param name="bookId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Book.Controllers.BooksController.GetBook(System.String)">
+            <summary>
+            Get Book for ISBN
+            </summary>
+            <param name="bookIsbn"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Book.Controllers.BooksController.GetBookRating(System.Int32)">
+            <summary>
+            Get Book Rating
+            </summary>
+            <param name="bookId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Book.Controllers.BooksController.CreateBook(System.Collections.Generic.List{System.Int32},System.Collections.Generic.List{System.Int32},Book.Models.Book)">
+            <summary>
+            Create book
+            </summary>
+            <param name="authId"></param>
+            <param name="catId"></param>
+            <param name="bookToCreate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Book.Controllers.BooksController.UpdateBook(System.Int32,System.Collections.Generic.List{System.Int32},System.Collections.Generic.List{System.Int32},Book.Models.Book)">
+            <summary>
+            Update book
+            </summary>
+            <param name="bookId"></param>
+            <param name="authId"></param>
+            <param name="catId"></param>
+            <param name="bookToUpdate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Book.Controllers.BooksController.DeleteBook(System.Int32)">
+            <summary>
+            Delete Book
+            </summary>
+            <param name="bookId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Book.Controllers.CategoriesController.GetCategories">
+            <summary>
+            Get Categories
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Book.Controllers.CategoriesController.GetCategory(System.Int32)">
+            <summary>
+            Get Category
+            </summary>
+            <param name="categoryId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Book.Controllers.CategoriesController.GetAllCategoriesForABook(System.Int32)">
+            <summary>
+            Get All Cat for book
+            </summary>
+            <param name="bookId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Book.Controllers.CategoriesController.GetAllBooksForCategory(System.Int32)">
+            <summary>
+            Get All Books For Category
+            </summary>
+            <param name="categoryId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Book.Controllers.CategoriesController.CreateCategory(Book.Models.Category)">
+            <summary>
+            Create Category
+            </summary>
+            <param name="categoryToCreate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Book.Controllers.CategoriesController.UpdateCategory(System.Int32,Book.Models.Category)">
+            <summary>
+            Update Category
+            </summary>
+            <param name="categoryId"></param>
+            <param name="updatedCategoryInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Book.Controllers.CategoriesController.DeleteCategory(System.Int32)">
+            <summary>
+            Delete Category
+            </summary>
+            <param name="categoryId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Book.Controllers.CountriesController.GetCountries">
+            <summary>
+            Get Countries
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Book.Controllers.CountriesController.GetCountry(System.Int32)">
+            <summary>
+            Get Country
+            </summary>
+            <param name="countryId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Book.Controllers.CountriesController.GetCountryOfAnAuthor(System.Int32)">
+            <summary>
+            Get Author Country
+            </summary>
+            <param name="authorId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Book.Controllers.CountriesController.GetAuthorsFromACountry(System.Int32)">
+            <summary>
+            Get Authors From a Country
+            </summary>
+            <param name="countryId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Book.Controllers.CountriesController.CreateCountry(Book.Models.Country)">
+            <summary>
+            Create Country
+            </summary>
+            <param name="countryToCreate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Book.Controllers.CountriesController.UpdateCountry(System.Int32,Book.Models.Country)">
+            <summary>
+            Update Country
+            </summary>
+            <param name="countryId"></param>
+            <param name="updatedCountryInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Book.Controllers.CountriesController.DeleteCountry(System.Int32)">
+            <summary>
+            Delete Country
+            </summary>
+            <param name="countryId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Book.Controllers.ReviewersController.GetReviewers">
+            <summary>
+            Get Reviewers
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Book.Controllers.ReviewersController.GetReviewer(System.Int32)">
+            <summary>
+            Get Reviewers
+            </summary>
+            <param name="reviewerId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Book.Controllers.ReviewersController.GetReviewsByReviwer(System.Int32)">
+            <summary>
+            Get Reviews for Reviewers
+            </summary>
+            <param name="reviewerId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Book.Controllers.ReviewersController.GetReviewerOfAReview(System.Int32)">
+            <summary>
+            Get Reviewer of A Review
+            </summary>
+            <param name="reviewId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Book.Controllers.ReviewersController.CreateReviewer(Book.Models.Reviewer)">
+            <summary>
+            Create Reviewer
+            </summary>
+            <param name="reviewerToCreate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Book.Controllers.ReviewersController.UpdateReviewer(System.Int32,Book.Models.Reviewer)">
+            <summary>
+            Update Reviewer
+            </summary>
+            <param name="reviewerId"></param>
+            <param name="updatedReviewerInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Book.Controllers.ReviewersController.DeleteReviewer(System.Int32)">
+            <summary>
+            Delete Reviewer
+            </summary>
+            <param name="reviewerId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Book.Controllers.ReviewsController.GetReviews">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Book.Controllers.ReviewsController.GetReview(System.Int32)">
+            <summary>
+            Get Reviews
+            </summary>
+            <param name="reviewId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Book.Controllers.ReviewsController.GetReviewsForABook(System.Int32)">
+            <summary>
+            Get Reviews for a book
+            </summary>
+            <param name="bookId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Book.Controllers.ReviewsController.GetBookOfAReview(System.Int32)">
+            <summary>
+            Get Book of A Review
+            </summary>
+            <param name="reviewId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Book.Controllers.ReviewsController.CreateReview(Book.Models.Review)">
+            <summary>
+            Create Review
+            </summary>
+            <param name="reviewToCreate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Book.Controllers.ReviewsController.UpdateReview(System.Int32,Book.Models.Review)">
+            <summary>
+            Update Review
+            </summary>
+            <param name="reviewId"></param>
+            <param name="reviewToUpdate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Book.Controllers.ReviewsController.DeleteReview(System.Int32)">
+            <summary>
+            Delete Review
+            </summary>
+            <param name="reviewId"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
